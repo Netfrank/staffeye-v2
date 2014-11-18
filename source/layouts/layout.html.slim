@@ -1,0 +1,306 @@
+doctype html
+html
+    head
+        
+        meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+        title 
+            | :: StaffEye ::.
+        
+        link rel="stylesheet" type="text/css" href="css/fonts.css"
+        link rel="stylesheet" type="text/css" href="css/iconos.css"
+        link rel="stylesheet" type="text/css" href="css/estilos.css"
+        
+        script type="text/javascript" src="js/jquery.js"
+        script type="text/javascript" src="js/scripts.js"
+
+    body
+        
+        header
+
+            .contenedor
+        
+                a href="/"
+                    img#logo src="img/logo.jpg"
+                
+                div#user-box
+
+                    div
+                        p.user-name Kathryn Murphy
+                        p.user-area Administrator Guide
+                            span Percentaje completed
+                        p.user-percent 60%
+                            img src="img/progressbar-60.jpg"
+
+                    a#user-options href="#"
+                        img src="img/user.jpg"
+                        span 144
+
+                    a#user-config href="#"
+                        span class="icon-cog"
+
+                    ul#user-options-menu
+
+                        li
+                            a href="#" Awaiting Assessments
+                                span 44
+
+                        li
+                            a href="#" Sent Assessments
+                                span 50
+
+                        li
+                            a href="#" Expired Assessments
+                                span 30
+
+                        li
+                            a href="#" Created Assessments
+                                span 20
+
+        section
+
+            h1 Schedule an Interview Devolution
+
+            div Filter per
+                select
+                    option Everyone
+                    option User #1
+                    option User #2
+                    option User #3
+
+            article
+
+                .items
+                    div#calendario
+                        .calendario_cabecera
+                            a href="" &#9668;
+                            div Friday, April 12
+                                span 2014
+
+                            a href="" 
+                                | &#9658;
+
+                        .calendario_days
+                            ul
+                                li Mon
+                                li Tue
+                                li Wed
+                                li Thu
+                                li Fri
+                                li Sat
+                                li Sun
+                            
+                            ul
+                                li 1
+                                li 2
+                                li 3
+                                li 4
+                                li 5
+                                li 6
+                                li 7
+                                li 8
+                                li 9
+                                li 10
+                                li 11
+                                li 12
+                                li 13
+                                li 14
+                                li 15
+                                li 16
+                                li 17
+                                li 18
+                                li 19
+                                li 20
+                                li 21
+                                li 22
+                                li 23
+                                li 24
+                                li 25
+                                li 26
+                                li 27
+                                li 28
+                                li 29
+                                li 30
+                                li 1
+                                li 2
+                                li 3
+                                li 4
+                                li 5
+
+                    div#reloj
+                        .reloj_cabecera Timer
+
+                        ul
+                            li 1
+                            li 
+                                |:
+                            li 50
+                            li PM
+
+                    div#control
+                        a href="#" Save
+                        a href="#" Cancel
+
+                .items
+                    h3 Waiting for confirmation
+                    img src="img/user-1.png"
+                    p Julia Richardson
+                        span Marketing
+                    .box
+                        a.lightblue href="#" Sheduled 21/10/2014
+
+                .items
+                    h3 Devolution date canceled
+                    img src="img/user-2.png"
+                    p Megan Collins
+                        span Designer
+                    .box
+                        a.red href="#" Re Schedule
+
+                .items
+                    h3 Ready for Devolution
+                    img src="img/user-3.png"
+                    p Lorraine Hill
+                        span FE-Developer
+                    .box
+                        a.green href="#" Start Interview
+
+                .items
+                    h3 Waiting for Devolution date
+                    img src="img/user-4.png"
+                    p Joy Scott
+                        span UX Designer
+                    .box
+                        a.orange href="#" Sheduled 01/12/2014
+
+                .items
+                    h3 Interviewed by: Kathryn Murphy
+                    img src="img/user-5.png"
+                    p Ritthy Hughes
+                        span FE-Developer
+                    .box
+                        a.white href="#" Interviewed 14/8/2014
+
+        div#sidebar
+
+            div class="user-perfil"
+                div class="information"
+                    span
+                        b Rank:
+                        br
+                        i Chief
+                    span
+                        b Position:
+                        br
+                        i CTO
+                    span
+                        b Join date:
+                        br
+                        i 03/04/2004
+
+            ul
+                a href=""
+                    img src="img/logo-insignia.jpg" class="logo-insignia" Insignia
+                a href=""
+                    span.icon-user My Results
+                a href=""
+                    span.icon-file Create Assessments
+                a href=""
+                    span.icon-briefcase Organization Results
+                a href=""
+                    span.icon-checklist Organization Chart
+                a href=""
+                    span.icon-mortar-board Traing Plans
+                a href=""
+                    span.icon-repo Manage Skills
+                a href=""
+                    span.icon-camera Interview Devolution
+
+        div#chatbar
+
+            h2
+                a#chatbar-out href="#"
+                    span.icon-playback-play Interviews
+
+            table#interviews
+
+                tr
+                    th Username
+                    th Date
+                    th Time
+
+                tr
+                    td 
+                        span.icon-bubbles Kathryn Murphy 
+                    td JAN
+                        span 8 Wednesday 
+                    td 1:50 PM
+
+                tr
+                    td.messages colspan="3"
+                        .other
+                            p Hello Kathryn, I have some personal stuff to do on that day, so I prefer, if you can, on hursday 9th. Are you ok with it?
+                                span Yesterday - Megan Collins
+                            img src="img/user-other.jpg"
+
+                        .me
+                            p OK Megan, I will schedule it at thursday afternoon. Regards!
+                                span Today - Kathryn Murphy
+                            img src="img/user-me.jpg"
+
+                        div
+                            textarea.comment Write the reason why you can't accept.
+                            a href="" Submit
+
+                tr
+                    td
+                        span.icon-camera Kathryn Murphy 
+                    td JAN
+                        span 8 Wednesday 
+                    td 1:50 PM 
+
+                tr
+                    td.messages colspan="3"
+
+                tr
+                    td
+                        span.icon-bubbles Kathryn Murphy 
+                    td
+                        div JAN
+                        span 8 Wednesday 
+                    td 1:50 PM 
+
+                tr
+                    td.messages colspan="3"
+                        .other
+                            p Hello Kathryn, I have some personal stuff to do on that day, so I prefer, if you can, on Thursday 9th. Are you ok with it?
+                                span Yesterday - Megan Collins
+                            img src="img/user-other.jpg"
+
+                        .me
+                            p OK Megan, I will schedule it at thursday afternoon. Regards!
+                            span Today - Kathryn Murphy
+                            img src="img/user-me.jpg"
+
+                        div
+                            textarea.comment "Write the reason why you can't accept."
+                            a href="" Submit
+
+                tr
+                    td
+                        span.icon-camera Kathryn Murphy 
+                    td
+                        div JAN
+                        span 8 Wednesday 
+                    td 1:50 PM
+
+                tr
+                    td.messages colspan="3"
+
+        footer
+            div
+                .contenedor
+                    img src="img/logo-chico.jpg"
+
+            div
+                div#contenedor
+                    | &copy; 2006 - 2013 STAFFEYE. Hecho en Argentina.
