@@ -16,4 +16,6 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 # Pre-processor HTML
 gem "slim"
 
-gem 'bourbon'
+gem "sass", "~> 3.4.8"
+
+gem "bourbon"

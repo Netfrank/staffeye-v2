@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+#chatbar {
+    width: 406px;
+    position: absolute;
+    right: 0px;
+    top: 45px;
+    background: $grey2;
+    transition: width .2s;
+    bottom: 47px;
+    display: none;
+    text-align: left;
+
+    h2 {
+        line-height: 46px;
+        margin: 0px;
+        padding: 2px 0px 0px;
+        color: $yellow1;
+        font-weight: 300;
+        font-size: 25px;
+
+        span {
+            display: block;
+            float: left;
+            font-size: 30px;
+            margin: 0px 16px 0px 25px;
+            line-height: 46px;
+        }
+        // span
+
+        a {
+            text-decoration: none;
+            color: $yellow1;
+        }
+
+    }
+    // h2
+
+}
+// #chatbar
+
+@mixin header-list($width) {
+    font-size: 12px;
+    line-height: 20px;
+    color: #CCC;
+    background: $black;
+    font-weight: 500;
+    text-align: center;
+    float: left;
+    width: $width;
+}
+// @mixin header-list($width)
+
+@mixin items-list($width) {
+    font-size: 11px;
+    color: #999;
+    width: $width;
+    vertical-align: top;
+    font-weight: 500;
+    padding: 0px;
+    border-bottom: solid 1px #000;
+    float: left;
+}
+// @mixin items-list($width)
+
+ul#interviews {
+    width: 100%;
+    border-spacing: 0px;
+    padding: 0px;
+    margin: 0px;
+    border-collapse: collapse;
+    height: auto;
+    overflow: hidden;
+    list-style: none;
+
+    li{
+
+        height: auto;
+        overflow: hidden;
+        display: block;
+        cursor: pointer;
+
+        .col-head {
+            @include header-list(65px);
+        }
+        // .col-head
+
+        .col-head:first-child {
+            @include header-list(242px);
+        }
+        // .col-head:first-child
+
+        .col-head:last-child {
+            @include header-list(98px);
+        }
+        // .col-head:last-child
+
+        .col-left {
+            @include items-list(242px);
+            line-height: 65px;
+            background: $grey2;
+            position: relative;
+
+            .name {
+                font-size: 19px;
+                color: #CCC;
+                font-weight: 500;
+                padding: 0px 15px;
+            }
+            // .name
+
+        }
+        // .col-left
+
+        .col-center {
+            @include items-list(65px);
+            background: $white;
+
+            .month {
+                font-size: 14px;
+                color: #FFF;
+                height: 17px;
+                font-weight: 500;
+                background: #C82828;
+                text-align: center;
+                margin: 0px;
+            }
+            // .month
+
+            .number {
+                font-size: 30px;
+                color: $black;
+                display: block;
+                text-align: center;
+                font-weight: 700;
+                line-height: 26px;
+                padding: 7px 0px 0px;
+            }
+            // .number
+
+            .day {
+                padding: 0px 0px 2px;
+            }
+            // .day
+
+        }
+        // .col-center
+
+        .col-right {
+            @include items-list(98px);
+            font-size: 23px;
+            background: #E43436;
+            color: #FFF;
+            font-weight: 300;
+            text-align: center;
+            width: 98px;
+            vertical-align: middle;
+            line-height: 65px;
+        }
+        // .col-right
+
+        .messages {
+            font-size: 14px;
+            color: #FFF;
+            height: auto;
+            overflow: hidden;
+            font-weight: 500;
+            background: #C82828;
+            text-align: center;
+            margin: 0px;
+            display: none;
+
+            background: $grey2 !important;
+            font-size: 12px;
+            line-height: 20px;
+            padding: 10px 10px 0px;
+
+            div {
+                height: auto;
+                overflow: hidden;
+                background: none;
+                position: relative;
+
+                p {
+                    background: #FFEB92;
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: #555;
+                    margin: 0px 0px 10px;
+                    padding: 10px;
+                    text-align: left;
+                    width: 321px;
+                    float: left;
+
+                    span {
+                        background: none;
+                        font-size: 11px;
+                        margin: 0px;
+                        padding: 0px;
+                        display: block;
+                        font-weight: 700;
+                    }
+
+                }
+
+                textarea {
+                    height: 80px;
+                    width: 370px;
+                    background: #FFF;
+                    color: #999;
+                    font-family: Museo;
+                    font-size: 15px;
+                    padding: 4px 6px;
+                }
+
+                a {
+                    float: right;
+                    display: block;
+                    text-align: center;
+                    width: 84px;
+                    background: #FFEB92;
+                    color: #777;
+                    padding: 1px 0px;
+                    margin: 2px 0px 8px;
+                    text-decoration: none;
+                }
+
+            }
+
+            div.other img {
+                position: relative;
+                bottom: 0px;
+            }
+
+            div.me p {
+                text-align: right;
+                float: right;
+                background: $yellow1;
+            }
+
+        }
+        //.messages 
+
+    }
+    // li
+
+}
+// ul#interviews

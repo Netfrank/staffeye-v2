@@ -1,0 +1,370 @@
+@charset "utf-8";
+
+@import 'vars';
+@import 'fonts';
+@import 'iconos';
+@import 'chatbar';
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: Museo;
+	min-height: 100%;
+	position: relative;
+}
+
+.contenedor {
+	width: 1100px; margin: 0px auto;
+	text-align: left;
+}
+
+header{
+	height: 43px; background: $grey1;
+	border-bottom: solid 2px $yellow1;
+}
+
+header #logo{
+	margin: 5px 0px 0px;
+}
+
+header #user-box{
+	float: right; width: 400px; height: 45px;
+}
+
+header #user-box div{
+	float: left; text-align: right;
+	margin: 0px 10px 0px 0px; width: 288px;
+}
+
+header #user-box div p{
+	margin: 0px; color: #CCC;
+}
+
+header #user-box div .user-name{
+	font-size: 14px; font-weight: 300; margin: 2px 0px -1px;
+}
+
+header #user-box div .user-area{
+	font-size: 10px; font-weight: 500;
+}
+
+header #user-box div .user-area span{
+	color: $yellow1; font-style: italic;
+}
+
+header #user-box div .user-percent{
+	font-size: 10px; font-weight: 500; color: $yellow1;
+}
+
+header #user-box div .user-percent img{
+	margin: 0px 0px -3px;
+}
+
+header #user-box a#user-options{
+	float: left; width: 60px; height: 45px; background: #F3F1F2;
+	text-decoration: none;
+}
+
+header #user-box a#user-options img{
+	margin: 8px 6px 0px;
+}
+
+header #user-box a#user-options span{
+	position: relative; top: -38px; left: 30px; background: #F85D5B;
+	color: #FFF; border-radius: 8px; -moz-border-radius: 8px;
+	-webkit-border-radius: 8px; font-size: 10px; display: block;
+	width: 26px; text-align: center; padding: 2px 0px;
+	font-weight: 700;
+}
+
+header #user-box>a#user-config{
+	float: left; font-size: 20px;
+	color: $yellow1; text-decoration: none;
+	padding: 10px 12px 10px 10px;
+	position: relative;
+}
+
+header #user-options-menu{
+	margin: 0px; padding: 8px 0px 0px; list-style: none;
+	width: 190px; position: relative; background: #F1F1F1;
+	top: 0px; left: 168px; height: auto; overflow: hidden;
+	display: none;
+}
+
+header #user-options-menu li a{
+	padding: 0px 10px; display: block; line-height: 33px;
+	font-size: 13px; text-decoration: none; color: #777;
+	letter-spacing: -1px;
+}
+
+header #user-options-menu li a:hover{
+	background: #E2E2E2;
+}
+
+header #user-options-menu li a span{
+	display: block; float: right; background: #F85D5B;
+	padding: 2px 6px 0px; font-size: 8px; font-weight: 700;
+	line-height: 12px; margin: 9px 0px; border-radius: 6px;
+	-moz-border-radius: 6px; -webkit-border-radius: 6px;
+	color: #FFF; letter-spacing: 0px;
+}
+
+
+/* SECTION (CUERPO DEL SISTEMA) */
+
+section{
+	width: 1100px; height: auto; overflow: hidden;
+	margin: 0px auto; text-align: left;
+}
+
+section>h1{
+	margin: 47px 0px 0px; font-size: 30px; color: #444;
+	font-weight: 300; border-bottom: solid 2px $yellow1;
+}
+
+section>div{
+	margin: 26px 0px 26px; font-size: 22px; color: #444;
+}
+
+section>div select{
+	font-family: Museo; border: none; background: #F4F4F4;
+	width: 229px; height: 22px; font-size: 18px;
+	margin: 0px 20px; color: #888;
+}
+
+
+/* BOXES DE TAREAS */
+
+.items{
+	width: 176px; float: left; margin: 0px 53px 45px 0px;
+	background: url(../images/bg-boxes.jpg) 0 0; color: #555;
+	border-radius: 4px;	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;	text-align: center;
+}
+
+.items:nth-child(5n+5){
+	margin: 0px 0px 45px;
+}
+
+.items h3{
+	font-size: 14px; font-weight: 300; margin: 13px 25px 10px;
+}
+
+.items img{
+	margin: 0px 0px 8px;
+}
+
+.items p{
+	font-size: 13px; margin: 0px 0px 20px;
+}
+
+.items p span{
+	font-size: 10px; display: block; font-weight: 500;
+}
+
+.items div.box{
+	padding: 10px 15px; background: url(../images/bg-bottom-box.png) repeat;
+}
+
+.items div.box a{
+	display: block; font-size: 13px; color: #FFF;
+	padding: 6px 1px; text-decoration: none;
+}
+
+.items div.box a.lightblue{
+	background: #308BD4; 
+}
+
+.items div.box a.red{
+	background: #FF3D3D; 
+}
+
+.items div.box a.green{
+	background: #01DD5F; 
+}
+
+.items div.box a.orange{
+	background: #FFA73D; 
+}
+
+.items div.box a.white{
+	background: #FFF; color: #666;
+}
+
+
+/* CALENDARIO */
+
+#calendario{
+	border-radius: 4px; -moz-border-radius: 4px;
+	-webkit-border-radius: 4px; border: solid 1px #333;
+	overflow: hidden; background: #FFF;
+}
+
+#calendario .calendario_cabecera{
+	background: #FFEC96; height: auto; overflow: hidden;
+}
+
+#calendario .calendario_cabecera div{
+	float: left; width: 126px; font-size: 14px; text-align: center;
+	color: #888; margin: 3px 0px 0px;
+}
+
+#calendario .calendario_cabecera div span{
+	display: block; padding: 2px 0px; font-size: 10px; background: #F8F8F8;
+	width: 34px; text-align: center; margin: 2px auto 3px; border-radius: 3px;
+	-moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+
+#calendario .calendario_cabecera a{
+	font-family: Arial; font-size: 8px; text-decoration: none; color: #444;
+	line-height: 40px; float: left; width: 24px; text-align: center;
+}
+
+#calendario .calendario_days ul{
+	margin: 0px 3px; padding: 0px; list-style: none;
+}
+
+#calendario .calendario_days ul li{
+	font-size: 7px; font-weight: 900; float: left;
+	width: 24px; text-align: center; line-height: 23px;
+	text-transform: uppercase; color: #777;
+}
+
+
+/* RELOJ DEL CALENDARIO */
+
+#reloj{
+	border-radius: 4px; -moz-border-radius: 4px;
+	-webkit-border-radius: 4px; border: solid 1px #333;
+	background: #FFF; border-top: none;
+	height: auto; overflow: hidden;
+}
+
+#reloj .reloj_cabecera{
+	background: #FFEC96; height: auto; overflow: hidden;
+	font-size: 14px; text-align: center; color: #888;
+	line-height: 20px;
+}
+
+#reloj ul{
+	height: auto; overflow: hidden; list-style: none;
+	margin: 0px auto; padding: 4px 0px; width: 97px;
+}
+
+#reloj ul li{
+	float: left; margin: 0px 9px 0px 0px;
+	font-size: 17px; color: #777;
+}
+
+
+/* CONTROL [GUARDAR/CANCELAR] */
+
+#control{
+	border-radius: 4px; -moz-border-radius: 4px;
+	-webkit-border-radius: 4px; border: solid 1px #333;
+	background: #000; border-top: none;
+	height: auto; overflow: hidden;
+}
+
+#control a{
+	border-radius: 2px; -moz-border-radius: 2px;
+	-webkit-border-radius: 2px; background: #01DD5F;
+	width: 87px; float: left; display: block; padding: 4px 0px 3px;	
+	color: #FFF; text-decoration: none; font-size: 14px;
+}
+
+#control a:last-child{
+	background: #FF3D3D; margin: 0px 0px 0px 1px; width: 86px;
+}
+
+
+
+/*  PIE DE PÁGINA / FOOTER */
+
+footer>div{
+	height: 36px; background: #1E1E1E;
+}
+
+footer div>div img{
+	margin: 7px 0px 0px;
+}
+
+footer>div:last-child{
+	height: 11px; background: $yellow1;
+	font-size: 10px; font-weight: 700;
+}
+
+footer>div:last-child div{
+	text-align: center;
+}
+
+
+
+
+
+
+/* BARRA LATERAL IZQUIERDA *******************************/
+
+#sidebar{
+	position: absolute; width: 66px;
+	background: $grey2; top: 45px; left: 0px;
+	overflow: hidden; bottom: 47px;
+	transition: width .2s;
+
+}
+
+.sidebar{
+	width: 268px !important;
+}
+
+#sidebar .user-perfil{
+	height: 134px;
+	background: #B87F6E url(../images/user-sidebar.png) -24px 14px no-repeat;
+}
+
+#sidebar .user-perfil .information{
+	float: right;
+	text-align: right;
+	padding: 13px 16px;
+	display: none;
+	font-size: 13px;
+	color: #FFF;
+}
+
+#sidebar .user-perfil .information span{
+	display: block;
+	margin-bottom: 5px;
+}
+
+
+#sidebar ul{
+	margin: -4px 0px 0px; padding: 0px; list-style: none;
+}
+
+#sidebar ul li{
+	text-align: left;
+}
+
+#sidebar ul li a{
+	font-size: 16px; line-height: 64px; background: #3E3E3E;
+	border-bottom: solid 1px $yellow1; display: block;
+	padding: 0px 0px 0px 0px; color: #AAA; height: 64px;
+	text-decoration: none; overflow: hidden;
+}
+
+#sidebar ul li a span{
+	color: #FFF; font-size: 40px; line-height: 64px;
+	display: block;	width: 66px; float: left;
+	text-align: center; background: $grey2;
+	margin: 0px 14px 0px 0px;
+}
+
+#sidebar ul li:first-child a{
+	background: $yellow1; color: #555;
+}
+
+#sidebar ul li img{
+	height: 64px; float: left;
+	margin-right: 14px;
+}
