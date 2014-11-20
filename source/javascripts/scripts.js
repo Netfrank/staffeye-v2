@@ -23,22 +23,23 @@ $(document).on('ready', function(){
 
 	// BARRA LATERAL DERECHA
 
-	$('#user-options-menu li a').on('click', function(){
-		$('#chatbar').show();
-	});
-
 	$('#chatbar-out').on('click', function(){
 		$('#chatbar').hide();
 	});
 
-	$('#chatbar').mouseleave(function(){
-		$('#chatbar').fadeOut();
-	});
+    $('body').on('click', function() {
+        $('#chatbar').hide();
+    });
+     
+    $('#user-options-menu li a, #interviews').on('click', function(e) {
+        $('#chatbar').show();
+        e.stopPropagation();
+    });
 
 
 	// TABLA DESPLEGABLE
 
-	$('#interviews li').on('click', function(){
+	$('.row').on('click', function(){
         var num = $(this).attr('rel');
         $("#" + num).toggle();
     });

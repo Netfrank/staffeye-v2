@@ -77,8 +77,11 @@ ul#interviews {
 
         height: auto;
         overflow: hidden;
-        display: block;
-        cursor: pointer;
+
+        .row {
+            display: block;
+            cursor: pointer;
+        }
 
         .col-head {
             @include header-list(65px);
@@ -200,8 +203,10 @@ ul#interviews {
                         display: block;
                         font-weight: 700;
                     }
+                    // .messages div p span
 
                 }
+                // .messages div p
 
                 textarea {
                     height: 80px;
@@ -212,6 +217,7 @@ ul#interviews {
                     font-size: 15px;
                     padding: 4px 6px;
                 }
+                // .messages div textarea
 
                 a {
                     float: right;
@@ -224,8 +230,10 @@ ul#interviews {
                     margin: 2px 0px 8px;
                     text-decoration: none;
                 }
+                // .messages div a
 
             }
+            // .messages div
 
             div.other img {
                 position: relative;
