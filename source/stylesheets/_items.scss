@@ -1,206 +1,216 @@
-.items{
+article{
 
-    width: 176px;
-    float: left;
-    margin: 0px 53px 45px 0px;
-    background: url(../images/bg-boxes.jpg) 0 0;
-    color: #555;
-    text-align: center;
-    @include border-radius(4px);
+    min-height: 500px;
+    height: auto;
+    overflow: hidden;
+    margin: 0px auto;
+    width: 1100px;
 
-    h3{
-        font-size: 14px;
-        font-weight: 300;
-        margin: 13px 25px 10px;
-    }
+    .items{
 
-    img{
-        margin: 0px 0px 8px;
-    }
-
-    p{
-        font-size: 13px;
-        margin: 0px 0px 20px;
-
-        span{
-            font-size: 10px;
-            display: block;
-            font-weight: 500;
-        }
-
-    }
-
-    .box {
-        padding: 10px 15px;
-        background: url(../images/bg-bottom-box.png) repeat;
-
-        a{
-            display: block;
-            font-size: 13px;
-            color: #FFF;
-            padding: 6px 1px;
-            text-decoration: none;
-        }
-
-        .lightblue{
-            background: $lightblue; 
-        }
-
-        .red{
-            background: $red; 
-        }
-
-        .green{
-            background: $green; 
-        }
-
-        .orange{
-            background: $orange; 
-        }
-
-        .white{
-            background: $white;
-            color: #666;
-        }
-
-    }
-
-
-    #calendario{
-        border: solid 1px #333;
-        overflow: hidden;
-        background: #FFF;
+        width: 176px;
+        float: left;
+        margin: 0px 53px 45px 0px;
+        background: url(../images/bg-boxes.jpg) 0 0;
+        color: #555;
+        text-align: center;
         @include border-radius(4px);
 
-        .calendario_cabecera{
-            background: #FFEC96;
-            height: auto;
+        h3{
+            font-size: 14px;
+            font-weight: 300;
+            margin: 13px 25px 10px;
+        }
+
+        img{
+            margin: 0px 0px 8px;
+        }
+
+        p{
+            font-size: 13px;
+            margin: 0px 0px 20px;
+
+            span{
+                font-size: 10px;
+                display: block;
+                font-weight: 500;
+            }
+
+        }
+
+        .box {
+            padding: 10px 15px;
+            background: url(../images/bg-bottom-box.png) repeat;
+
+            a{
+                display: block;
+                font-size: 13px;
+                color: #FFF;
+                padding: 6px 1px;
+                text-decoration: none;
+            }
+
+            .lightblue{
+                background: $lightblue; 
+            }
+
+            .red{
+                background: $red; 
+            }
+
+            .green{
+                background: $green; 
+            }
+
+            .orange{
+                background: $orange; 
+            }
+
+            .white{
+                background: $white;
+                color: #666;
+            }
+
+        }
+
+
+        #calendario{
+            border: solid 1px #333;
             overflow: hidden;
+            background: #FFF;
+            @include border-radius(4px);
 
-            div{
-                float: left;
-                width: 126px;
-                font-size: 14px;
-                text-align: center;
-                color: #888;
-                margin: 3px 0px 0px;
+            .calendario_cabecera{
+                background: #FFEC96;
+                height: auto;
+                overflow: hidden;
 
-                span{
-                    display: block;
-                    padding: 2px 0px;
-                    font-size: 10px;
-                    background: #F8F8F8;
-                    width: 34px;
+                div{
+                    float: left;
+                    width: 126px;
+                    font-size: 14px;
                     text-align: center;
-                    margin: 2px auto 3px;
-                    @include border-radius(3px);
+                    color: #888;
+                    margin: 3px 0px 0px;
+
+                    span{
+                        display: block;
+                        padding: 2px 0px;
+                        font-size: 10px;
+                        background: #F8F8F8;
+                        width: 34px;
+                        text-align: center;
+                        margin: 2px auto 3px;
+                        @include border-radius(3px);
+                    }
+
+                }
+
+                a{
+                    font-family: Arial;
+                    font-size: 8px;
+                    text-decoration: none;
+                    color: #444;
+                    line-height: 40px;
+                    float: left;
+                    width: 24px;
+                    text-align: center;
                 }
 
             }
 
-            a{
-                font-family: Arial;
-                font-size: 8px;
-                text-decoration: none;
-                color: #444;
-                line-height: 40px;
-                float: left;
-                width: 24px;
-                text-align: center;
+            .calendario_days {
+                ul{
+                    margin: 0px 3px;
+                    padding: 0px;
+                    list-style: none;
+
+                    li{
+                        font-size: 7px;
+                        font-weight: 900;
+                        float: left;
+                        width: 24px;
+                        text-align: center;
+                        line-height: 23px;
+                        text-transform: uppercase;
+                        color: #777;
+                    }
+
+                }
+
             }
 
         }
 
-        .calendario_days {
+        #reloj{
+            border: solid 1px #333;
+            background: #FFF;
+            border-top: none;
+            height: auto;
+            overflow: hidden;
+            @include border-radius(4px);
+
+            .reloj_cabecera{
+                background: $yellow1;
+                height: auto;
+                overflow: hidden;
+                font-size: 14px;
+                text-align: center;
+                color: #888;
+                line-height: 20px;
+            }
+
             ul{
-                margin: 0px 3px;
-                padding: 0px;
+                height: auto;
+                overflow: hidden;
                 list-style: none;
+                margin: 0px auto;
+                padding: 4px 0px;
+                width: 97px;
 
                 li{
-                    font-size: 7px;
-                    font-weight: 900;
                     float: left;
-                    width: 24px;
-                    text-align: center;
-                    line-height: 23px;
-                    text-transform: uppercase;
+                    margin: 0px 9px 0px 0px;
+                    font-size: 17px;
                     color: #777;
                 }
 
             }
-
+            
         }
 
-    }
-
-    #reloj{
-        border: solid 1px #333;
-        background: #FFF;
-        border-top: none;
-        height: auto;
-        overflow: hidden;
-        @include border-radius(4px);
-
-        .reloj_cabecera{
-            background: $yellow1;
+        #control{
+            @include border-radius(4px);
+            border: solid 1px #333;
+            background: #000;
+            border-top: none;
             height: auto;
             overflow: hidden;
-            font-size: 14px;
-            text-align: center;
-            color: #888;
-            line-height: 20px;
-        }
 
-        ul{
-            height: auto;
-            overflow: hidden;
-            list-style: none;
-            margin: 0px auto;
-            padding: 4px 0px;
-            width: 97px;
-
-            li{
+            a{
+                @include border-radius(2px);
+                background: $green;
+                width: 87px;
                 float: left;
-                margin: 0px 9px 0px 0px;
-                font-size: 17px;
-                color: #777;
+                display: block;
+                padding: 4px 0px 3px; 
+                color: #FFF;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+            a:last-child{
+                background: $red;
+                margin: 0px 0px 0px 1px;
+                width: 86px;
             }
 
         }
-        
-    }
-
-    #control{
-        @include border-radius(4px);
-        border: solid 1px #333;
-        background: #000;
-        border-top: none;
-        height: auto;
-        overflow: hidden;
-
-        a{
-            @include border-radius(2px);
-            background: $green;
-            width: 87px;
-            float: left;
-            display: block;
-            padding: 4px 0px 3px; 
-            color: #FFF;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        a:last-child{
-            background: $red;
-            margin: 0px 0px 0px 1px;
-            width: 86px;
-        }
 
     }
 
-}
+    .items:nth-child(5n+5){
+        margin: 0px 0px 45px;
+    }
 
-.items:nth-child(5n+5){
-    margin: 0px 0px 45px;
 }
