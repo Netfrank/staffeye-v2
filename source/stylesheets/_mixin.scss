@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+@mixin header-list($width) {
+    font-size: 12px;
+    line-height: 20px;
+    color: #CCC;
+    background: $black;
+    font-weight: 500;
+    text-align: center;
+    float: left;
+    width: $width;
+}
+// @mixin header-list
+
+
+@mixin items-list($width) {
+    font-size: 11px;
+    color: #999;
+    width: $width;
+    vertical-align: top;
+    font-weight: 500;
+    padding: 0px;
+    border-bottom: solid 1px #000;
+    float: left;
+}
+// @mixin items-list
+
+
+@mixin border-radius($size){
+    border-radius: $size;
+    -moz-border-radius: $size;
+    -webkit-border-radius: $size;
+}
+// @mixing border-radius

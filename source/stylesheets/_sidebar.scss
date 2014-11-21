@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+#sidebar{
+    position: absolute;
+    width: 66px;
+    background: $grey2;
+    top: 45px;
+    left: 0px;
+    overflow: hidden;
+    bottom: 47px;
+    transition: width .2s;
+
+    .user-perfil{
+        height: 134px;
+        background: #B87F6E url(../images/user-sidebar.png) -24px 14px no-repeat;
+
+        .information{
+            float: right;
+            text-align: right;
+            padding: 13px 16px;
+            display: none;
+            font-size: 13px;
+            color: #FFF;
+
+            span{
+                display: block;
+                margin-bottom: 5px;
+            }
+            // span
+
+        }
+        // .information
+
+    }
+    // .user-perfil
+
+    ul{
+        margin: -4px 0px 0px;
+        padding: 0px;
+        list-style: none;
+
+        li{
+            text-align: left;
+
+            a{
+                font-size: 16px;
+                line-height: 64px;
+                background: $grey5;
+                border-bottom: solid 1px $yellow1;
+                display: block;
+                padding: 0px;
+                color: #AAA;
+                height: 64px;
+                text-decoration: none;
+                overflow: hidden;
+
+                span{
+                    color: #FFF;
+                    font-size: 40px;
+                    line-height: 64px;
+                    display: block;
+                    width: 66px;
+                    float: left;
+                    text-align: center;
+                    background: $grey2;
+                    margin: 0px 14px 0px 0px;
+                }
+                // span
+
+            }
+            // a
+
+            img{
+                height: 64px;
+                float: left;
+                margin-right: 14px;
+            }
+            // img
+
+        }
+        // li
+
+        li:first-child {
+            a{
+                background: $yellow1;
+                color: #555;
+            }
+
+        }
+        // li:first-child
+
+    }
+    // ul
+
+}
+// #sidebar
+
+.sidebar{
+    width: 268px !important;
+}
+// .sidebar
