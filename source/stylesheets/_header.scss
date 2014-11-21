@@ -14,13 +14,13 @@ header{
         width: 400px;
         height: 45px;
 
-        div{
+        #info{
             float: left;
             text-align: right;
             margin: 0px 10px 0px 0px;
             width: 288px;
 
-            div{
+            >div{
                 margin: 0px;
                 color: #CCC;
             }
@@ -101,33 +101,29 @@ header{
             display: none;
 
             li {
+                padding: 0px 10px;
+                line-height: 33px;
+                font-size: 13px;
+                text-decoration: none;
+                color: #777;
+                letter-spacing: -1px;
+                cursor: pointer;
 
-                a{
-                    padding: 0px 10px;
+                span{
                     display: block;
-                    line-height: 33px;
-                    font-size: 13px;
-                    text-decoration: none;
-                    color: #777;
-                    letter-spacing: -1px;
-
-                    span{
-                        display: block;
-                        float: right;
-                        background: $red;
-                        padding: 2px 6px 0px;
-                        font-size: 8px;
-                        font-weight: 700;
-                        line-height: 12px;
-                        margin: 9px 0px;
-                        @include border-radius(6px);
-                        color: #FFF;
-                        letter-spacing: 0px;
-                    }
-
+                    float: right;
+                    background: $red;
+                    padding: 2px 6px 0px;
+                    font-size: 8px;
+                    font-weight: 700;
+                    line-height: 12px;
+                    margin: 9px 0px;
+                    @include border-radius(6px);
+                    color: #FFF;
+                    letter-spacing: 0px;
                 }
 
-                a:hover{
+                &:hover{
                     background: $grey4;
                 }
 
@@ -141,9 +137,14 @@ header{
             color: $yellow1;
             text-decoration: none;
             text-align: center;
-            padding: 10px 0px 10px;
+            height: 43px;
             width: 42px;
-            margin: 0px;
+
+            span {
+                margin: 11px 0px 0px;
+                display: block;
+            }
+
         }
 
     }

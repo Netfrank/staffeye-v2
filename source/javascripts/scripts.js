@@ -31,7 +31,7 @@ $(document).on('ready', function(){
         $('#chatbar').hide();
     });
      
-    $('#user-options-menu li a, #interviews').on('click', function(e) {
+    $('#user-options-menu li, #interviews').on('click', function(e) {
         $('#chatbar').show();
         e.stopPropagation();
     });
